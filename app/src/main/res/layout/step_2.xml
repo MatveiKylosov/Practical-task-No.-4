@@ -60,6 +60,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/border_radius"
+        android:onClick="onStepSex"
         android:text="Продолжить"
         android:textColor="#0099ff"
         android:textStyle="bold"
