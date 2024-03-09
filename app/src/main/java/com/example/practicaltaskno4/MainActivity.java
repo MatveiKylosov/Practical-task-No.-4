@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStepAge(View view){
-
+        setContentView(R.layout.step_2);
     }
 
     public void onStepSex(View view){
-
+        setContentView(R.layout.step_3);
     }
 
     public void onStepEmail(View view){
-
+        setContentView(R.layout.step_4);
     }
 }
