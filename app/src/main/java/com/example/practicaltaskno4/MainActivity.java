@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.TextView;
-
+import android.widget.RadioGroup;
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -35,5 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onStepEmail(View view){
         setContentView(R.layout.step_4);
+    }
+
+    public void OnStepFive(View view){
+     setContentView(R.layout.step_5);
     }
 }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099FF">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
@@ -21,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Отлично, можешь ещё\nнаписать почту и телефон?"
+        android:text="Введи:\nфамилию, отчество и никнейм"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -31,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/Phone"
+        android:id="@+id/LastName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -39,30 +40,54 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/border_radius"
         android:ems="10"
-        android:hint="Введите почту"
+        android:hint="Введите фамилию"
         android:inputType="text"
         android:paddingLeft="20dp"
         android:paddingTop="15dp"
         android:paddingRight="20dp"
         android:paddingBottom="15dp"
         android:textColor="#0099ff"
+        android:textColorHint="#46000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/MiddleName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/border_radius"
         android:ems="10"
-        android:hint="Введите телефон"
+        android:hint="Введите отчество"
         android:inputType="text"
         android:paddingLeft="20dp"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="15dp"
+        android:textColor="#0099ff"
+        android:textColorHint="#46000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LastName" />
+
+    <EditText
+        android:id="@+id/NickName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/border_radius"
+        android:ems="10"
+        android:hint="Введите никнейм"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColorHint="#46000000"
         android:paddingTop="15dp"
         android:paddingRight="20dp"
         android:paddingBottom="15dp"
@@ -70,7 +95,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/MiddleName" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/appCompatButton"
@@ -81,11 +106,10 @@
         android:layout_marginBottom="100dp"
         android:background="@drawable/border_radius"
         android:text="Продолжить"
-        android:onClick="OnStepFive"
         android:textColor="#0099ff"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/NickName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
